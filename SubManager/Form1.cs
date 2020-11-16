@@ -15,6 +15,19 @@ namespace SubManager
         public Form1()
         {
             InitializeComponent();
+            labelUser.Text = Environment.UserName + " (" + Environment.MachineName + ")";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog importFileDialog = new OpenFileDialog();
+            importFileDialog.Filter = "*.xls|*.xlsx";
+            importFileDialog.Multiselect = false;
+
+            if (importFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                button3.Text = importFileDialog.FileName;
+            }
         }
     }
 }

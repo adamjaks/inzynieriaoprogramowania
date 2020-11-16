@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelAside = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelAside.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -45,13 +45,35 @@
             // panelAside
             // 
             this.panelAside.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(54)))));
-            this.panelAside.Controls.Add(this.label2);
+            this.panelAside.Controls.Add(this.labelUser);
             this.panelAside.Controls.Add(this.label1);
             this.panelAside.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelAside.Location = new System.Drawing.Point(0, 0);
             this.panelAside.Name = "panelAside";
             this.panelAside.Size = new System.Drawing.Size(240, 552);
             this.panelAside.TabIndex = 0;
+            // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
+            this.labelUser.Location = new System.Drawing.Point(23, 41);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(106, 23);
+            this.labelUser.TabIndex = 1;
+            this.labelUser.Text = "@user.name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
+            this.label1.Location = new System.Drawing.Point(24, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Logged as:";
             // 
             // panel1
             // 
@@ -65,27 +87,16 @@
             this.panel1.Size = new System.Drawing.Size(847, 552);
             this.panel1.TabIndex = 1;
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
-            this.label1.Location = new System.Drawing.Point(24, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Logged as:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
-            this.label2.Location = new System.Drawing.Point(23, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "@user.name";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 472);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(847, 80);
+            this.panel2.TabIndex = 5;
             // 
             // button1
             // 
@@ -131,25 +142,15 @@
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(43)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(291, 155);
+            this.button3.Location = new System.Drawing.Point(130, 152);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(250, 173);
+            this.button3.Size = new System.Drawing.Size(581, 173);
             this.button3.TabIndex = 4;
             this.button3.Text = "IMPORTUJ PLIK";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 472);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(847, 80);
-            this.panel2.TabIndex = 5;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -173,7 +174,7 @@
 
         private System.Windows.Forms.Panel panelAside;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
