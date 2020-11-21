@@ -162,6 +162,7 @@
             this.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "SubManager";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.panelAside.ResumeLayout(false);
             this.panelAside.PerformLayout();
             this.panel1.ResumeLayout(false);
