@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace SubManager
 {
     public partial class Form1 : Form
@@ -16,5 +17,21 @@ namespace SubManager
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Title = " Otwórz plik ";
+            openFileDialog1.Filter = "Excel Files|*.xlsx";
+            openFileDialog1.ShowDialog();
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
+ 
