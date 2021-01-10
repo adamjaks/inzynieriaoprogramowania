@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelAside = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,7 +45,7 @@
             // panelAside
             // 
             this.panelAside.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(54)))));
-            this.panelAside.Controls.Add(this.label2);
+            this.panelAside.Controls.Add(this.labelUser);
             this.panelAside.Controls.Add(this.label1);
             this.panelAside.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelAside.Location = new System.Drawing.Point(0, 0);
@@ -53,16 +53,16 @@
             this.panelAside.Size = new System.Drawing.Size(240, 552);
             this.panelAside.TabIndex = 0;
             // 
-            // label2
+            // labelUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
-            this.label2.Location = new System.Drawing.Point(23, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "@user.name";
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
+            this.labelUser.Location = new System.Drawing.Point(23, 41);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(106, 23);
+            this.labelUser.TabIndex = 1;
+            this.labelUser.Text = "@user.name";
             // 
             // label1
             // 
@@ -71,7 +71,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
             this.label1.Location = new System.Drawing.Point(24, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.Size = new System.Drawing.Size(75, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Logged as:";
             // 
@@ -155,7 +155,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1087, 552);
             this.Controls.Add(this.panel1);
@@ -175,7 +175,7 @@
 
         private System.Windows.Forms.Panel panelAside;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
