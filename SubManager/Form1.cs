@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 
 namespace SubManager
 {
     public partial class Form1 : Form
     {
+        string logData;
+
         public Form1()
         {
             InitializeComponent();
+            logData = Environment.UserName + " (" + Environment.MachineName + ")";
+            labelUser.Text = logData;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -31,6 +35,14 @@ namespace SubManager
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            string path = "../../../SM_logs.txt";
+            StreamWriter sw = File.AppendText(path);
+            sw.WriteLine(logData + " (" + DateTime.Now + ")");
+            sw.Close();
         }
     }
 }
