@@ -50,7 +50,7 @@
             this.panelAside.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelAside.Location = new System.Drawing.Point(0, 0);
             this.panelAside.Name = "panelAside";
-            this.panelAside.Size = new System.Drawing.Size(240, 552);
+            this.panelAside.Size = new System.Drawing.Size(256, 552);
             this.panelAside.TabIndex = 0;
             // 
             // label2
@@ -58,11 +58,12 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(250)))));
-            this.label2.Location = new System.Drawing.Point(23, 41);
+            this.label2.Location = new System.Drawing.Point(12, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "@user.name";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -82,9 +83,9 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(240, 0);
+            this.panel1.Location = new System.Drawing.Point(256, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 552);
+            this.panel1.Size = new System.Drawing.Size(831, 552);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -95,7 +96,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 472);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(847, 80);
+            this.panel2.Size = new System.Drawing.Size(831, 80);
             this.panel2.TabIndex = 5;
             // 
             // button1
@@ -146,7 +147,7 @@
             this.button3.Location = new System.Drawing.Point(291, 155);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(250, 173);
+            this.button3.Size = new System.Drawing.Size(234, 173);
             this.button3.TabIndex = 4;
             this.button3.Text = "IMPORTUJ PLIK";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
