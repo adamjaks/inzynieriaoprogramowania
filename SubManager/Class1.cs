@@ -21,28 +21,16 @@ namespace SubManager
             wb = excel.Workbooks.Open(path);
             ws = wb.Worksheets[sheet];
         }
-        public Excel()
-        {
-
-        }
 
         public string ReadCell(int i, int j)
         {
-            if (ws != null && ws.Cells[i, j].Value2 != null)
+
+            if (ws.Cells[i, j].Value2 != null)
             {
                 return ws.Cells[i, j].Value2;
             }
             else
                 return "";
-        }
-        public void WriteCell(int i, int j, string s)
-        {
-            ws.Cells[i, j].Value2 = s;
-
-        }
-        public void SaveFile()
-        {
-            wb.Save(); 
         }
     }
 }

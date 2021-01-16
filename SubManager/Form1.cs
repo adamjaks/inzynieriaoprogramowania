@@ -30,9 +30,16 @@ namespace SubManager
             openFileDialog1.Filter = "Excel Files|*.xlsx";
             openFileDialog1.ShowDialog();
             path1 = openFileDialog1.FileName;
+
+            string defaultText = button3.Text;
+            button3.Text = "Wczytywanie...";
+
             Form2.path1 = this.path1;
             Form2 f2 = new Form2();
+            
             f2.Show();
+            button3.Text = defaultText;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
