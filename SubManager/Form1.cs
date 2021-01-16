@@ -14,6 +14,7 @@ namespace SubManager
     public partial class Form1 : Form
     {
         string logData;
+        public string path1;
 
         public Form1()
         {
@@ -28,6 +29,8 @@ namespace SubManager
             openFileDialog1.Title = " Otwórz plik ";
             openFileDialog1.Filter = "Excel Files|*.xlsx";
             openFileDialog1.ShowDialog();
+            path1 = openFileDialog1.FileName;
+            Form2.path1 = this.path1;
             Form2 f2 = new Form2();
             f2.Show();
         }
